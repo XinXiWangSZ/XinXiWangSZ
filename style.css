@@ -1,0 +1,193 @@
+.vip_card[data-v-011fb670] {
+    width: 320px;
+    height: 537px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+    background: linear-gradient(0deg, #4269d9, #4253d9)50% 50% no-repeat;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .1)
+}
+
+.bg_img[data-v-011fb670] {
+    width: 320px;
+    height: 537px;
+    background-image: url(../img/beijing.14778f02.png);
+    background-repeat: repeat;
+    background-position: 50%;
+    z-index: -1
+}
+
+.card_tit[data-v-011fb670] {
+    font-size: 60px;
+    margin: 19px 0 0 0;
+    padding-bottom: 8px;
+    text-shadow: 0 4px 0 rgba(0, 0, 0, .075);
+    line-height: 60px
+}
+
+.pb_9[data-v-011fb670] {
+    padding-bottom: 9px
+}
+
+.fs_24[data-v-011fb670] {
+    font-size: 24px;
+    line-height: 24px
+}
+
+.no_pass_svg[data-v-011fb670] {
+    position: absolute;
+    right: 15px;
+    top: 200px;
+    z-index: 100;
+    width: 128px;
+    height: 48px;
+    display: block;
+    opacity: .6;
+    filter: alpha(opacity=60);
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg)
+}
+
+.user_avatar[data-v-011fb670] {
+    width: 120px;
+    height: 120px;
+    border-radius: 100vw;
+    display: block;
+    margin: 0 auto 10px;
+    background-color: #000;
+    overflow: hidden;
+    border: 2px solid #fff;
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat
+}
+
+.divbottome {
+    bottom: 23px;
+    color: #317cff
+}
+
+.divbottome,
+.divbottome1 {
+    position: fixed;
+    font-size: 12px
+}
+
+.divbottome1 {
+    bottom: 5px;
+    color: #bdbdbd
+}
+
+p {
+    padding: 0;
+    margin: 0
+}
+
+.van_popup_css {
+    height: 100%;
+    font-size: 15px
+}
+
+.popupBig {
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-left: 20px;
+    height: 100%
+}
+
+.van_popup_div_top_class {
+    display: flex;
+    height: 60px;
+    justify-content: space-between
+}
+
+.iop {
+    background-image: url(../img/45x45.a8ea1393.png);
+    background-size: 275px 36px
+}
+
+.iop,
+.top_left {
+    background-repeat: no-repeat
+}
+
+.top_left {
+    height: 60px;
+    width: 60px;
+    background-position: 50%;
+    background-size: 100% auto
+}
+
+.icon-you {
+    font-size: 50px
+}
+
+.top_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 14px;
+    flex: 1
+}
+
+.name_class {
+    font-size: 16px;
+    font-weight: 600
+}
+
+.emp_class {
+    font-size: 14px;
+    color: #666
+}
+
+.van_popup_div_bottom_class {
+    padding-top: 20px;
+    height: 22px
+}
+
+.van_popup_div_bottom_class img {
+    height: 22px;
+    width: 22px;
+    vertical-align: top
+}
+
+.van_popup_div_bottom_class span {
+    padding-left: 21px;
+    font-size: 16px;
+    font-weight: 600
+}
+
+.van_popup_div_bottom_class>div {
+    padding: 14px 0
+}
+
+.flexBox {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    height: 45px
+}
+
+.flexBox>div:first-child {
+    margin-right: 12px
+}
+
+.suspensionRoundCss[data-v-63f0d5e4] {
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    line-height: 20px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #457af6;
+    position: fixed;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    box-shadow: 0 0 15px #457af6;
+    z-index: 1002
+}
