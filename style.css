@@ -195,3 +195,18 @@ p {
 #clock,#validity {
 font-family: system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Helvetica, Arial, sans-serif;
 }
+
+a {
+text-decoration: none;
+color: #fff;
+}
+
+button {
+    background-color: #317cff;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 24px;
+    display: block;
+    border: #317cff;
+    border-radius: 5px;
+}
