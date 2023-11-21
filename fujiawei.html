@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="icon" href="/favicon.ico">
+    <title>访客电子证件</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body><noscript>&lt;strong&gt;We're sorry but foxconn-wechat doesn't work properly without JavaScript enabled. Please
+        enable it to continue.&lt;/strong&gt;</noscript>
+    <div id="app" style="height: 100%;">
+        <div style="height: 100%;">
+            <div></div>
+            <div data-v-63f0d5e4="" class="suspensionRoundCss" style="left: 16px; top: 500px;"> 业务<br
+                    data-v-63f0d5e4="">办理 </div>
+            <div data-v-011fb670="" style="height: 100%;">
+                <div data-v-011fb670="" class="vip_card">
+                    <div data-v-011fb670="" class="bg_img">
+                        <div data-v-011fb670="" style="padding: 20px; color: rgb(255, 255, 255); text-align: center;">
+                            <div data-v-011fb670=""
+                                style="display: flex; justify-content: space-between; position: relative;"><img
+                                    data-v-011fb670="" src="./logo.png"
+                                    height="24px" alt="">
+                                <div data-v-011fb670="" height="60px"
+                                    title="{&quot;type&quot;:1,&quot;openid&quot;:&quot;otskO0qZSEZqBvi-mZtOodkjuMuQ&quot;}">
+                                    <canvas width="60" height="60" style="display: none;"></canvas><img alt="Scan me!"
+                                        src="./QRCode.png"
+                                        style="display: block;">
+                                </div>
+                            </div>
+                            <div data-v-011fb670="">
+                                <div data-v-011fb670="" class="card_tit">来宾证</div>
+                                <div data-v-011fb670="" class="fs_24 pb_9">龙华</div>
+                                <div data-v-011fb670="" class="fs_24"></div>
+                                <div id="clock" data-v-011fb670="" style="font-size: 15px; font-weight: bold;" > </div>
+                                <div data-v-011fb670=""><span data-v-011fb670="" class="no_pass_svg"><img
+                                            data-v-011fb670=""
+                                            src="./svg_card_zhengchang.svg"></span>
+                                </div>
+                                <div data-v-011fb670=""
+                                    style="margin: 35px 0px 28px; background-image: url(&quot;&quot;);">
+                                    <div data-v-011fb670="" class="user_avatar"
+                                        style="background-image: url(./fujiawei.png);">
+                                    </div>
+                                    <div data-v-011fb670="" class="fs_24 pb_9">付家伟(已认证)</div>
+                                    <div data-v-011fb670="" style="font-size: 18px; line-height: 1em;">成都新西旺自动化科技有限公司
+                                    </div>
+                                </div>
+                                <div  id="validity" data-v-011fb670="" style="font-size: 12px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateClock() {
+            var now = new Date();
+            var years = now.getFullYear();
+            var months = now.getMonth() + 1;
+            var days = now.getDate();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+
+            // 添加前导零，确保始终是两位数
+            hours = (hours < 10) ? "0" + hours : hours;
+            minutes = (minutes < 10) ? "0" + minutes : minutes;
+            seconds = (seconds < 10) ? "0" + seconds : seconds;
+
+            var strYMD = years + "-" + months + "-" + days;
+            var timeString = strYMD + " " + hours + ":" + minutes + ":" + seconds;
+            var validityString = "有效期 " + strYMD + " 07:30 ~ " + strYMD + " 23:59";//有效期 2023-11-17 08:16 ~ 2023-11-17 23:16
+
+            // 将时间更新到页面上的元素
+            document.getElementById("clock").innerHTML = timeString;
+            // 显示有效期
+            document.getElementById("validity").innerHTML = validityString;
+        }
+
+        // 每秒更新一次时钟
+        setInterval(updateClock, 1000);
+
+        // 页面加载时初始化时钟
+        updateClock();
+    </script>
+</body>
+
+</html>
