@@ -192,7 +192,7 @@ p {
     z-index: 1002
 }
 
-#clock,#validity {
+#clock,#validity,#car {
 font-family: system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Helvetica, Arial, sans-serif;
 }
 
